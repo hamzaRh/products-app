@@ -5,7 +5,7 @@ const Actions = (props: any) => {
   return (
     <div className="Actions">
         <button onClick={props.randomize}>Randomize</button>
-        <button onClick={props.reset}>Randomize</button>
+        <button onClick={props.reset}>Reset</button>
     </div>
   );
 }

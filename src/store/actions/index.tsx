@@ -1,0 +1,1 @@
+export {fetchProducts, resetProducts, randomizeProducts} from './products';

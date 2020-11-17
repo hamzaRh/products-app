@@ -29,11 +29,10 @@ const randomizeProductsStart = (products:  IProduct[]) => {
 export const fetchProducts = () => {
     return (dispatch: any) => {
         axios.get(url)
-        .then(response =>  {
-            console.log('here', response.data.products)
-            dispatch(fetchProductsStart(response.data.products))
+        .then((response: any) =>  {
+            dispatch(fetchProductsStart(response.data.products));
         })
-        .catch(error => {
+        .catch((error: any) => {
             console.log(error);
         });
     };

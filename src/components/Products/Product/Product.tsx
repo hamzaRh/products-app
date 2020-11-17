@@ -2,7 +2,7 @@ import React from 'react';
 import { IProduct } from '../../../shared/models';
 import './Product.css';
 
-const product = (props: IProduct) => {
+const Product = (props: IProduct) => {
   const { name, count, price } = props;
   return (
     <div className="Product">
@@ -13,4 +13,4 @@ const product = (props: IProduct) => {
   );
 }
 
-export default product;
+export default Product;

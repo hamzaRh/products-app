@@ -10,7 +10,7 @@ import * as actions from './store/actions';
 import './App.css';
 
 
-const app = (props: any) => {
+const App = (props: any) => {
   let content;
   const { products, onFetchProducts, onResetProducts, onRandomizeProducts } = props;
 
@@ -72,4 +72,4 @@ const mapDispatchToProps = (dispatch: any) => {
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(app);
+export default connect(mapStateToProps, mapDispatchToProps)(App);

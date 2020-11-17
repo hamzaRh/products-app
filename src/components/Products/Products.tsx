@@ -3,7 +3,7 @@ import Product from './Product/Product';
 import { IProduct } from '../../shared/models';
 import './Products.css';
 
-const products = (props: any) => {
+const Products = (props: any) => {
 
   let productsList;
 
@@ -28,4 +28,4 @@ const products = (props: any) => {
   );
 }
 
-export default products;
+export default Products;

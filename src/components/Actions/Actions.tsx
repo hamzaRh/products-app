@@ -1,7 +1,7 @@
 import React from 'react';
 import './Actions.css';
 
-const actions = (props: any) => {
+const Actions = (props: any) => {
   return (
     <div className="Actions">
         <button onClick={props.randomize}>Randomize</button>
@@ -10,4 +10,4 @@ const actions = (props: any) => {
   );
 }
 
-export default actions;
+export default Actions;

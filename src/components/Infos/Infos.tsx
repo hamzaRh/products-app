@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { IProduct } from '../../shared/models';
 import './Infos.css';
 
-const infos = (props: any) => {
+const Infos = (props: any) => {
 
   const { products } = props;
 
@@ -42,4 +42,4 @@ const mapStateToProps = (state: any) => {
 }
 
 
-export default connect(mapStateToProps)(infos);
+export default connect(mapStateToProps)(Infos);

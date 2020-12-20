@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Product from './Product/Product';
 import { IProduct } from '../../shared/models';
 import './Products.css';

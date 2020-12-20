@@ -21,10 +21,10 @@ const App = (props: any) => {
   const randomize = () => {
     let randomizeProducts = [...products];
 
-    randomizeProducts.map((product: IProduct) => {
+    randomizeProducts.forEach((product: IProduct) => {
       product.count = getRandomInt(1, 8);
       product.price = getRandomInt(1, 20);
-    })
+    });
     onRandomizeProducts(randomizeProducts);
   }  
 

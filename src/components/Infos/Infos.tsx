@@ -17,7 +17,7 @@ const Infos = (props: any) => {
   const getInfos = (products: IProduct[]) => {
     let count = 0;
     let price = 0;
-    products.map(product => {
+    products.forEach(product => {
       count = count + product.count;    
       price = price + product.price;
     });

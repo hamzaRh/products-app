@@ -13,7 +13,7 @@ const Counter = () => {
     return () => {
       clearInterval(interval);
     }
-  }, [])
+  }, [count])
 
   return (
     <div className="Counter">

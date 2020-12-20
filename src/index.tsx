@@ -8,7 +8,7 @@ import App from './App';
 import ProductsReducer from './store/reducers/products';
 import reportWebVitals from './reportWebVitals';
 
-const composeEnhancers = process.env.NODE_ENV === 'development' ? (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : null || compose;
+const composeEnhancers =  (window as any).__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
   products: ProductsReducer
